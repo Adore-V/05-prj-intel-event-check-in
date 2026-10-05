@@ -29,15 +29,14 @@ attendeeCountEl.textContent = count;
 console.log("Total check-ins: ", count);
 
 //Update progress bar
-const percentage = Math.round((count / maxCount * 100)) + "%";
+const percentage = Math.round((count / maxCount * 100));
 progressBar.style.width = percentage + "%";
 console.log(`Progress: ${percentage}`);
 
 //Update team counter
 const teamCounter = document.getElementById(team + "Count");
 console.log(teamCounter);
-teamCounter.textContent = parseInt
-(teamCounter.textContent) + 1;
+teamCounter.textContent = parseInt(teamCounter.textContent) + 1;
 
 //Show welcome message
 const message = `Welcome, ${name} from ${teamName}`;

@@ -1,5 +1,5 @@
 //Get all needed DOM elements
-const form = document.getElementById("chickInForm");
+const form = document.getElementById("checkInForm");
 const nameInput = document.getElementById("attendeeName");
 const teamSelect = document.getElementById("teamSelect");
 

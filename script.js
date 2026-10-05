@@ -23,14 +23,14 @@ form.addEventListener("submit", function (event)
 
   console.log(name,teamName);
 
-  //Increment count
+//Increment count
 count++
 attendeeCountEl.textContent = count;
 console.log("Total check-ins: ", count);
 
 //Update progress bar
-const percentage = Math.round((count / maxCount * 100) + "%");
-progressBar.style.width = percentage = "%";
+const percentage = Math.round((count / maxCount * 100)) + "%";
+progressBar.style.width = percentage + "%";
 console.log(`Progress: ${percentage}`);
 
 //Update team counter
@@ -41,6 +41,7 @@ teamCounter.textContent = parseInt
 
 //Show welcome message
 const message = `Welcome, ${name} from ${teamName}`;
+greetingEl.textContent = message;
 console.log(message);
 
 form.reset();
